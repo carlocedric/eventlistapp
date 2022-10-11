@@ -1,0 +1,637 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		265DB6C028F5140900015FAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265DB6BF28F5140900015FAF /* AppDelegate.swift */; };
+		265DB6C428F5140900015FAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265DB6C328F5140900015FAF /* ViewController.swift */; };
+		265DB6C728F5140900015FAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 265DB6C528F5140900015FAF /* Main.storyboard */; };
+		265DB6C928F5140C00015FAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 265DB6C828F5140C00015FAF /* Assets.xcassets */; };
+		265DB6CC28F5140C00015FAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 265DB6CA28F5140C00015FAF /* LaunchScreen.storyboard */; };
+		265DB6D728F559D700015FAF /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265DB6D628F559D700015FAF /* Event.swift */; };
+		265DB6DA28F5832B00015FAF /* RouterContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265DB6D928F5832B00015FAF /* RouterContract.swift */; };
+		265DB6DC28F5834C00015FAF /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265DB6DB28F5834C00015FAF /* BaseRouter.swift */; };
+		265DB6E028F583F700015FAF /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265DB6DF28F583F700015FAF /* HomeViewModel.swift */; };
+		265DB6E228F5840300015FAF /* HomeViewModelContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265DB6E128F5840200015FAF /* HomeViewModelContract.swift */; };
+		265DB6E528F5847D00015FAF /* HomeViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265DB6E428F5847D00015FAF /* HomeViewInteractor.swift */; };
+		265DB6E728F5848900015FAF /* HomeViewInteractorContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265DB6E628F5848900015FAF /* HomeViewInteractorContract.swift */; };
+		265DB6F128F5860100015FAF /* EventsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265DB6F028F5860100015FAF /* EventsViewModel.swift */; };
+		265DB6F328F5860B00015FAF /* EventsViewModelContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265DB6F228F5860B00015FAF /* EventsViewModelContract.swift */; };
+		265DB6F628F5863D00015FAF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265DB6F528F5863D00015FAF /* HomeViewController.swift */; };
+		265DB6F828F5864B00015FAF /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 265DB6F728F5864B00015FAF /* HomeViewController.xib */; };
+		265DB6FA28F5891600015FAF /* EventsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265DB6F928F5891600015FAF /* EventsManager.swift */; };
+		265DB6FD28F58B1B00015FAF /* HomeViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265DB6FC28F58B1B00015FAF /* HomeViewRouter.swift */; };
+		265DB70028F58C8E00015FAF /* HomeViewAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265DB6FF28F58C8E00015FAF /* HomeViewAssembly.swift */; };
+		265DB70428F5910600015FAF /* EventsViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265DB70328F5910500015FAF /* EventsViewInteractor.swift */; };
+		265DB70628F5911000015FAF /* EventsViewInteractorContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265DB70528F5911000015FAF /* EventsViewInteractorContract.swift */; };
+		265DB70928F591E000015FAF /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265DB70828F591E000015FAF /* EventsViewController.swift */; };
+		265DB70B28F591EA00015FAF /* EventsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 265DB70A28F591EA00015FAF /* EventsViewController.xib */; };
+		265DB70D28F592AA00015FAF /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265DB70C28F592AA00015FAF /* EventCell.swift */; };
+		265DB70F28F592B300015FAF /* EventCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 265DB70E28F592B300015FAF /* EventCell.xib */; };
+		265DB71228F5954200015FAF /* EventsViewAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265DB71128F5954200015FAF /* EventsViewAssembly.swift */; };
+		265DB71728F5958200015FAF /* EventsViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265DB71628F5958200015FAF /* EventsViewRouter.swift */; };
+		DA2CBD31803A4EECA7CCA9D9 /* Pods_EventLogginApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BD9752AF3B5051C59760FA3 /* Pods_EventLogginApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0BD9752AF3B5051C59760FA3 /* Pods_EventLogginApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EventLogginApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		265DB6BC28F5140900015FAF /* EventLogginApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventLogginApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		265DB6BF28F5140900015FAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		265DB6C328F5140900015FAF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		265DB6C628F5140900015FAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		265DB6C828F5140C00015FAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		265DB6CB28F5140C00015FAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		265DB6CD28F5140C00015FAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		265DB6D628F559D700015FAF /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		265DB6D928F5832B00015FAF /* RouterContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterContract.swift; sourceTree = "<group>"; };
+		265DB6DB28F5834C00015FAF /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
+		265DB6DF28F583F700015FAF /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		265DB6E128F5840200015FAF /* HomeViewModelContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelContract.swift; sourceTree = "<group>"; };
+		265DB6E428F5847D00015FAF /* HomeViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewInteractor.swift; sourceTree = "<group>"; };
+		265DB6E628F5848900015FAF /* HomeViewInteractorContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewInteractorContract.swift; sourceTree = "<group>"; };
+		265DB6F028F5860100015FAF /* EventsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewModel.swift; sourceTree = "<group>"; };
+		265DB6F228F5860B00015FAF /* EventsViewModelContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewModelContract.swift; sourceTree = "<group>"; };
+		265DB6F528F5863D00015FAF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		265DB6F728F5864B00015FAF /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		265DB6F928F5891600015FAF /* EventsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsManager.swift; sourceTree = "<group>"; };
+		265DB6FC28F58B1B00015FAF /* HomeViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewRouter.swift; sourceTree = "<group>"; };
+		265DB6FF28F58C8E00015FAF /* HomeViewAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewAssembly.swift; sourceTree = "<group>"; };
+		265DB70328F5910500015FAF /* EventsViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewInteractor.swift; sourceTree = "<group>"; };
+		265DB70528F5911000015FAF /* EventsViewInteractorContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewInteractorContract.swift; sourceTree = "<group>"; };
+		265DB70828F591E000015FAF /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		265DB70A28F591EA00015FAF /* EventsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventsViewController.xib; sourceTree = "<group>"; };
+		265DB70C28F592AA00015FAF /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
+		265DB70E28F592B300015FAF /* EventCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventCell.xib; sourceTree = "<group>"; };
+		265DB71128F5954200015FAF /* EventsViewAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewAssembly.swift; sourceTree = "<group>"; };
+		265DB71628F5958200015FAF /* EventsViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewRouter.swift; sourceTree = "<group>"; };
+		63D65FAEACE8908AD65CC873 /* Pods-EventLogginApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventLogginApp.debug.xcconfig"; path = "Target Support Files/Pods-EventLogginApp/Pods-EventLogginApp.debug.xcconfig"; sourceTree = "<group>"; };
+		A62086580B6E949C1ADEFB26 /* Pods-EventLogginApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventLogginApp.release.xcconfig"; path = "Target Support Files/Pods-EventLogginApp/Pods-EventLogginApp.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		265DB6B928F5140900015FAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA2CBD31803A4EECA7CCA9D9 /* Pods_EventLogginApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		265DB6B328F5140900015FAF = {
+			isa = PBXGroup;
+			children = (
+				265DB6BE28F5140900015FAF /* EventLogginApp */,
+				265DB6BD28F5140900015FAF /* Products */,
+				E90355D39EC08A3B8AA1DFFA /* Pods */,
+				EB2B3C7064F168CFC0BB8633 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		265DB6BD28F5140900015FAF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				265DB6BC28F5140900015FAF /* EventLogginApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		265DB6BE28F5140900015FAF /* EventLogginApp */ = {
+			isa = PBXGroup;
+			children = (
+				265DB6EB28F5854E00015FAF /* Common */,
+				265DB6EE28F585CA00015FAF /* EventsView */,
+				265DB6DD28F583CC00015FAF /* HomeView */,
+				265DB6D828F5831700015FAF /* BaseCoordinator */,
+				265DB6D528F5595C00015FAF /* Models */,
+				265DB6BF28F5140900015FAF /* AppDelegate.swift */,
+				265DB6C328F5140900015FAF /* ViewController.swift */,
+				265DB6C528F5140900015FAF /* Main.storyboard */,
+				265DB6C828F5140C00015FAF /* Assets.xcassets */,
+				265DB6CA28F5140C00015FAF /* LaunchScreen.storyboard */,
+				265DB6CD28F5140C00015FAF /* Info.plist */,
+			);
+			path = EventLogginApp;
+			sourceTree = "<group>";
+		};
+		265DB6D528F5595C00015FAF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				265DB6D628F559D700015FAF /* Event.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		265DB6D828F5831700015FAF /* BaseCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				265DB6D928F5832B00015FAF /* RouterContract.swift */,
+				265DB6DB28F5834C00015FAF /* BaseRouter.swift */,
+			);
+			path = BaseCoordinator;
+			sourceTree = "<group>";
+		};
+		265DB6DD28F583CC00015FAF /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				265DB6FE28F58C7E00015FAF /* DI */,
+				265DB6FB28F58B0700015FAF /* Coordinator */,
+				265DB6F428F5861E00015FAF /* Presentation */,
+				265DB6E328F5846B00015FAF /* Interactor */,
+				265DB6DE28F583E100015FAF /* ViewModel */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		265DB6DE28F583E100015FAF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				265DB6DF28F583F700015FAF /* HomeViewModel.swift */,
+				265DB6E128F5840200015FAF /* HomeViewModelContract.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		265DB6E328F5846B00015FAF /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				265DB6E428F5847D00015FAF /* HomeViewInteractor.swift */,
+				265DB6E628F5848900015FAF /* HomeViewInteractorContract.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		265DB6EB28F5854E00015FAF /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				265DB6F928F5891600015FAF /* EventsManager.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		265DB6EE28F585CA00015FAF /* EventsView */ = {
+			isa = PBXGroup;
+			children = (
+				265DB71328F5954A00015FAF /* Coordinator */,
+				265DB71028F5952500015FAF /* DI */,
+				265DB70728F591D100015FAF /* Presentation */,
+				265DB70228F590F600015FAF /* Interactor */,
+				265DB6EF28F585F000015FAF /* ViewModel */,
+			);
+			path = EventsView;
+			sourceTree = "<group>";
+		};
+		265DB6EF28F585F000015FAF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				265DB6F028F5860100015FAF /* EventsViewModel.swift */,
+				265DB6F228F5860B00015FAF /* EventsViewModelContract.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		265DB6F428F5861E00015FAF /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				265DB6F528F5863D00015FAF /* HomeViewController.swift */,
+				265DB6F728F5864B00015FAF /* HomeViewController.xib */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		265DB6FB28F58B0700015FAF /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				265DB6FC28F58B1B00015FAF /* HomeViewRouter.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		265DB6FE28F58C7E00015FAF /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				265DB6FF28F58C8E00015FAF /* HomeViewAssembly.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		265DB70228F590F600015FAF /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				265DB70328F5910500015FAF /* EventsViewInteractor.swift */,
+				265DB70528F5911000015FAF /* EventsViewInteractorContract.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		265DB70728F591D100015FAF /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				265DB70828F591E000015FAF /* EventsViewController.swift */,
+				265DB70A28F591EA00015FAF /* EventsViewController.xib */,
+				265DB70C28F592AA00015FAF /* EventCell.swift */,
+				265DB70E28F592B300015FAF /* EventCell.xib */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		265DB71028F5952500015FAF /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				265DB71128F5954200015FAF /* EventsViewAssembly.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		265DB71328F5954A00015FAF /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				265DB71628F5958200015FAF /* EventsViewRouter.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		E90355D39EC08A3B8AA1DFFA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				63D65FAEACE8908AD65CC873 /* Pods-EventLogginApp.debug.xcconfig */,
+				A62086580B6E949C1ADEFB26 /* Pods-EventLogginApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EB2B3C7064F168CFC0BB8633 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0BD9752AF3B5051C59760FA3 /* Pods_EventLogginApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		265DB6BB28F5140900015FAF /* EventLogginApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 265DB6D028F5140C00015FAF /* Build configuration list for PBXNativeTarget "EventLogginApp" */;
+			buildPhases = (
+				379882FB4045F2CBD6F27CD0 /* [CP] Check Pods Manifest.lock */,
+				265DB6B828F5140900015FAF /* Sources */,
+				265DB6B928F5140900015FAF /* Frameworks */,
+				265DB6BA28F5140900015FAF /* Resources */,
+				5850BBFA4D9FCA96A87DA7E5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EventLogginApp;
+			productName = EventLogginApp;
+			productReference = 265DB6BC28F5140900015FAF /* EventLogginApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		265DB6B428F5140900015FAF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					265DB6BB28F5140900015FAF = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 265DB6B728F5140900015FAF /* Build configuration list for PBXProject "EventLogginApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 265DB6B328F5140900015FAF;
+			productRefGroup = 265DB6BD28F5140900015FAF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				265DB6BB28F5140900015FAF /* EventLogginApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		265DB6BA28F5140900015FAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				265DB6CC28F5140C00015FAF /* LaunchScreen.storyboard in Resources */,
+				265DB70B28F591EA00015FAF /* EventsViewController.xib in Resources */,
+				265DB6C928F5140C00015FAF /* Assets.xcassets in Resources */,
+				265DB6C728F5140900015FAF /* Main.storyboard in Resources */,
+				265DB70F28F592B300015FAF /* EventCell.xib in Resources */,
+				265DB6F828F5864B00015FAF /* HomeViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		379882FB4045F2CBD6F27CD0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EventLogginApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5850BBFA4D9FCA96A87DA7E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EventLogginApp/Pods-EventLogginApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EventLogginApp/Pods-EventLogginApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EventLogginApp/Pods-EventLogginApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		265DB6B828F5140900015FAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				265DB6DA28F5832B00015FAF /* RouterContract.swift in Sources */,
+				265DB70428F5910600015FAF /* EventsViewInteractor.swift in Sources */,
+				265DB6C428F5140900015FAF /* ViewController.swift in Sources */,
+				265DB6DC28F5834C00015FAF /* BaseRouter.swift in Sources */,
+				265DB6FA28F5891600015FAF /* EventsManager.swift in Sources */,
+				265DB6FD28F58B1B00015FAF /* HomeViewRouter.swift in Sources */,
+				265DB70028F58C8E00015FAF /* HomeViewAssembly.swift in Sources */,
+				265DB6E228F5840300015FAF /* HomeViewModelContract.swift in Sources */,
+				265DB70D28F592AA00015FAF /* EventCell.swift in Sources */,
+				265DB6E028F583F700015FAF /* HomeViewModel.swift in Sources */,
+				265DB6C028F5140900015FAF /* AppDelegate.swift in Sources */,
+				265DB71228F5954200015FAF /* EventsViewAssembly.swift in Sources */,
+				265DB71728F5958200015FAF /* EventsViewRouter.swift in Sources */,
+				265DB6E528F5847D00015FAF /* HomeViewInteractor.swift in Sources */,
+				265DB70628F5911000015FAF /* EventsViewInteractorContract.swift in Sources */,
+				265DB6E728F5848900015FAF /* HomeViewInteractorContract.swift in Sources */,
+				265DB6F628F5863D00015FAF /* HomeViewController.swift in Sources */,
+				265DB6F128F5860100015FAF /* EventsViewModel.swift in Sources */,
+				265DB6F328F5860B00015FAF /* EventsViewModelContract.swift in Sources */,
+				265DB6D728F559D700015FAF /* Event.swift in Sources */,
+				265DB70928F591E000015FAF /* EventsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		265DB6C528F5140900015FAF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				265DB6C628F5140900015FAF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		265DB6CA28F5140C00015FAF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				265DB6CB28F5140C00015FAF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		265DB6CE28F5140C00015FAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		265DB6CF28F5140C00015FAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		265DB6D128F5140C00015FAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63D65FAEACE8908AD65CC873 /* Pods-EventLogginApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9W323M2EAV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EventLogginApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carlocedric.eventlog.EventLogginApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		265DB6D228F5140C00015FAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A62086580B6E949C1ADEFB26 /* Pods-EventLogginApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9W323M2EAV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EventLogginApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carlocedric.eventlog.EventLogginApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		265DB6B728F5140900015FAF /* Build configuration list for PBXProject "EventLogginApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				265DB6CE28F5140C00015FAF /* Debug */,
+				265DB6CF28F5140C00015FAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		265DB6D028F5140C00015FAF /* Build configuration list for PBXNativeTarget "EventLogginApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				265DB6D128F5140C00015FAF /* Debug */,
+				265DB6D228F5140C00015FAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 265DB6B428F5140900015FAF /* Project object */;
+}
