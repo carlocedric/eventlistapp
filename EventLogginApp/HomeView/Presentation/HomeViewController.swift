@@ -20,6 +20,7 @@ class HomeViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    // Logs the event and shows the events list
     @IBAction func logEvent(_ sender: UIButton) {
         let event = Event()
         event.buttonTag = sender.tag

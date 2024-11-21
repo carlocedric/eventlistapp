@@ -13,6 +13,7 @@ class EventsViewModel: EventsViewModelContract {
         self.eventsViewInteractor = eventsViewInteractor
     }
     
+    // retrieve events from the interactor
     func getEvents() -> [Event] {
         return eventsViewInteractor.getEvents()
     }

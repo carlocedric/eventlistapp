@@ -8,6 +8,7 @@
 import Swinject
 import SwinjectAutoregistration
 
+// EventsViewAssembly is responsible for assembling and registering the dependencies for the Events View.
 class EventsViewAssembly: Assembly {
     func assemble(container: Container) {
         container.autoregister(EventsViewModelContract.self,

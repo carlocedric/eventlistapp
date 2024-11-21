@@ -8,6 +8,7 @@
 import Swinject
 import SwinjectAutoregistration
 
+// HomeViewAssembly is responsible for assembling and registering the dependencies for the Home View.
 class HomeViewAssembly: Assembly {
     func assemble(container: Container) {
         container.autoregister(HomeViewModelContract.self,

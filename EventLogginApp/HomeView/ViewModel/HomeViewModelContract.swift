@@ -7,6 +7,10 @@
 
 protocol HomeViewModelContract {
     var router: RouterContract? { get set }
+    
+    // log an event using the interactor
     func logEvent(_ event: Event)
+    
+    // show the events list
     func showEventsList()
 }

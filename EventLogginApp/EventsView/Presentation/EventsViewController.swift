@@ -29,12 +29,14 @@ class EventsViewController: UIViewController {
         setupTable()
     }
     
+    // Setup the table view
     private func setupTable() {
         tableView.register(UINib(nibName: EventCell.identifier, bundle: nil),
                            forCellReuseIdentifier: EventCell.identifier)
         tableView.dataSource = self
     }
     
+    // Load events from the ViewModel
     private func loadEvents() {
         savedEvents = viewModel?.getEvents() ?? []
     }

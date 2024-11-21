@@ -14,7 +14,7 @@ class EventCell: UITableViewCell {
     @IBOutlet weak var subtitle: UILabel!
 
     func setup(with event: Event){
-        self.mainTitle.text = "Button \(event.buttonTag) Presed"
+        self.mainTitle.text = "Button \(event.buttonTag) Pressed"
         self.subtitle.text = event.timeStamp
         self.setBackgroundColor(with: event)
     }

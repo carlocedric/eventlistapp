@@ -7,8 +7,10 @@
 
 class EventsViewInteractor: EventsViewInteractorContract {
     
+    // Reference to the shared EventsManager to manage logs
     private let eventsManager = EventsManager.sharedInstance
     
+    // retrieve events from the EventsManager
     func getEvents() -> [Event] {
         return eventsManager.getEvents()
     }

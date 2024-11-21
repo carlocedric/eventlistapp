@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         window = UIWindow(frame: UIScreen.main.bounds)
         
+        // Initialize the main coordinator (router) with the navigation controller
         let navigationController = UINavigationController()
         mainCoordinator = HomeViewRouter(navigationController: navigationController)
         mainCoordinator?.start()
